@@ -1,5 +1,5 @@
 def send_mail(message, recipient, sender='university.help@gmail.com'):
-    if (recipient and sender not in '@')  # данная проверка некорректна, т.к. при отсутсвии знака только в одном email, мы все равно вернем сообщение об успешной отправке!
+    if (recipient and sender not in '@')  # данная проверка некорректна, т.к. при отсутствии знака только в одном email, мы все равно вернем сообщение об успешной отправке!
           and (not sender.endswith((".com", ".ru", ".net")) or not recipient.endswith((".com", ".ru", ".net"))):
         print(f'Невозможно отправить письмо с адреса {sender} на адрес {recipient}')
 
